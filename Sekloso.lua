@@ -1,13 +1,14 @@
 -- เสกของ & ปรับตัวละคร By Pumpkitz Hub
--- Theme: Ocean
+-- Theme: AmberGlow
 
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
    Name = "เสกของ By Pumpkitz hub",
+   Icon = 75519083960535, -- โลโก้ตรง Header ตามที่มึงขอ
    LoadingTitle = "Pumpkitz Hub",
    LoadingSubtitle = "by Pumpkitz",
-   Theme = "Ocean",
+   Theme = "AmberGlow", -- เปลี่ยนธีมเป็น AmberGlow แล้วเว้ย
    DisableRayfieldPrompts = false,
    DisableBuildWarnings = false,
    ConfigurationSaving = {
@@ -203,7 +204,7 @@ PlayerTab:CreateSlider({
    Callback = function(Value)
       local char = game.Players.LocalPlayer.Character
       if char and char:FindFirstChild("Humanoid") then
-         char.Humanoid.UseJumpPower = true -- บังคับใช้ JumpPower แทน JumpHeight
+         char.Humanoid.UseJumpPower = true
          char.Humanoid.JumpPower = Value
       end
    end,
@@ -267,7 +268,7 @@ ToolTab:CreateButton({
    Callback = function()
       Rayfield:Notify({
          Title = "🎃 Pumpkitz Hub",
-         Content = "เสก Tool & Player Mods v1.1\nTheme: Ocean\nBy Pumpkitz",
+         Content = "เสก Tool & Player Mods v1.2\nTheme: AmberGlow\nBy Pumpkitz",
          Time = 6
       })
    end,
